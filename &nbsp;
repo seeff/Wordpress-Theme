@@ -1,0 +1,162 @@
+&nbsp;
+
+<!-- Carousel
+    ================================================== -->
+<div class="carousel slide" id="myCarousel" data-ride="carousel"><!-- Indicators -->
+<div class="carousel-inner">
+<div class="item active imgLiquidFill imgLiquid"><img alt="Feet on wall with fun socks" src="./img/photos/socks-sitting-on-a-wall.png" />
+<div class="container">
+<div class="carousel-caption">
+<h1>An awesome sock monthly subscription</h1>
+<p class="lead">Each month we will send you a fun pair of socks.</p>
+<a class="btn btn-lg btn-primary" role="button" href="./sock-subscription.php">Sign up today</a>
+
+</div>
+</div>
+</div>
+<div class="item imgLiquidFill imgLiquid"><img alt="Sock subscription gifts" src="./img/photos/sock-are-a-perfect-gift.png" />
+<div class="container">
+<div class="carousel-caption">
+<h1>A great gift</h1>
+Don't be selfish, let your friends or loved ones join in on the fun.
+<p class="lead"><a class="btn btn-lg btn-primary" role="button" href="./sock-subscription.php">Gift Socks Now</a></p>
+
+</div>
+</div>
+</div>
+<div class="item imgLiquidFill imgLiquid"><img alt="Tightrope walker wearing fun socks" src="./img/photos/tightrope-walker-with-fun-socks.png" />
+<div class="container">
+<div class="carousel-caption">
+<h1>Live life on the edge</h1>
+Fun socks make you feel good, when you feel good you look good.
+<p class="lead"><a class="btn btn-lg btn-primary" role="button" href="./sock-subscription.php">Subscribe Today</a></p>
+
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- /.carousel -->&nbsp;
+
+<!-- Marketing messaging and featurettes
+    ================================================== -->&nbsp;
+
+<!-- Wrap the rest of the page in another container to center all the content. -->
+<div class="container marketing"><!-- Three columns of text below the carousel -->
+<div class="row center">
+<div class="col-sm-4"><img class="sun-flower-background" alt="Calendar" src="./img/icons/calendar.svg" />
+<h2>Step 1</h2>
+Tell us if the socks are for you or if they’re a gift
+
+<!--Simply pick a plan and tell us the place. We'll select
+                    boastfully bright and dynamically patterned socks to ship
+                    to your door monthly.
+
+--><a class="btn btn-info" href="./sock-subscription.php">Get Started »</a>
+
+</div>
+<!-- /.col-lg-4 -->
+<div class="col-sm-4"><img class="sun-flower-background" alt="Clipboard" src="./img/icons/clipboard.svg" />
+<h2>Step 2</h2>
+Customize your socks (duration, sex, style)
+
+<!--Take off your flip-flops and white tube socks; change
+                    the conversation. Our socks are for freethinkers who know
+                    what they deserve</p --><a class="btn btn-info" href="./sock-subscription.php">Get Started »</a>
+
+</div>
+<!-- /.col-lg-4 -->
+<div class="col-sm-4"><img class="sun-flower-background" alt="Paper Bag" src="./img/icons/paper-bag.svg" />
+<h2>Step 3</h2>
+Let us know where to ship and who to charge
+
+<!-- p>It’s your right to stand out. Go ahead; Sockscribe, and
+                    marvel yourself, your lover, your friends, even your
+                    favorite pair of clogs.</p --><a class="btn btn-info" href="./sock-subscription.php">Get Started »</a>
+
+</div>
+<!-- /.col-lg-4 --></div>
+<!-- /.row -->
+
+<hr class="featurette-divider" />
+
+<!-- START THE FEATURETTES --></div>
+<!-- end container -->
+<div class="container">
+<div class="row featurette">
+<div class="col-md-5"><img class="featurette-image img-responsive" alt="Sock Delivery in Envelopes" src="../img/socks-in-envelopes.jpg" /></div>
+<div class="col-md-7">
+<h2 class="featurette-heading">The surprise <span class="text-muted">It’s freaking exciting!</span></h2>
+<p class="lead">Unlike boysenberry picking season, sock picking season is an activity we partake in year round. While we allow you the option to choose from two categories of sock styles--patterns and graphics--we wouldn’t be able to call your socks a surprise if you knew exactly what you were getting ahead of time. So relax, we’ve got your feet covered.</p>
+
+<a class="btn btn-lg btn-primary" href="./sock-subscription.php">Get Started</a></div>
+</div>
+</div>
+<!-- end container -->
+
+<hr class="featurette-divider" />
+
+<div class="container">
+<div class="row featurette">
+<div class="col-md-12">
+<h2 class="featurette-heading center">Our Customers Love Us <span class="text-muted">So will you.</span></h2>
+<div id="testimonials">
+<div class="a-testimonial" id="testimonial-1">
+<div class="col-md-4"><img class="featurette-image img-responsive" alt="Testimonial photo from Lauren" src="./img/testimonial-lauren.jpg" /></div>
+<blockquote class="col-md-8 ">
+<p class="lead">"I got my boyfriend a Sockscription and he's hooked - I've never seen him more excited"</p>
+
+<small><cite title="Source Title">Lauren J, San Francisco</cite></small></blockquote>
+</div>
+<div class="a-testimonial" id="testimonial-2">
+<div class="col-md-4"><img class="featurette-image img-responsive" alt="Pile of our socks" src="./img/testimonial-bryant.jpg" /></div>
+<blockquote class="col-md-8">
+<p class="lead">"Sockscribe Me brings back the feeling the night before Christmas, monthly"</p>
+
+<small><cite title="Source Title">Bryant D, Boston</cite></small></blockquote>
+</div>
+<div class="a-testimonial" id="testimonial-3">
+<div class="col-md-4"><img class="featurette-image img-responsive" alt="Pile of our socks" src="./img/testimonial-danny.jpg" /></div>
+<blockquote class="col-md-8">
+<p class="lead">"Awesome style and super comfortable socks, looks great with suits"</p>
+
+<small><cite title="Source Title">Danny H, New York</cite></small></blockquote>
+</div>
+<div class="a-testimonial" id="testimonial-4">
+<div class="col-md-4"><img class="featurette-image img-responsive" alt="Pile of our socks" src="./img/testimonial-stephanie.jpg" /></div>
+<blockquote class="col-md-8">
+<p class="lead">"Awesome style and super comfortable socks, looks great with suits"</p>
+
+<small><cite title="Source Title">Stephanie D, Pennsylvania</cite></small></blockquote>
+</div>
+</div>
+</div>
+</div>
+
+<hr class="featurette-divider" />
+
+<div class="row featurette">
+<div class="col-md-5">
+<div class="play-video">Play Video</div>
+</div>
+<div class="col-md-7">
+<h2 class="featurette-heading">Watch Our Video. <span class="text-muted">Now.</span></h2>
+<p class="lead">So you’re excited about your impending transformation to greatness, but you apprehensive about coming off like some type of superhero. Well, don’t worry! You’re not going to possess magical abilities to fly or spin webs any time soon; after all, we’re sending you socks.</p>
+<p class="lead">Either way, if you want a more realistic idea of what these socks will do for you watch this video, it may give you a glimpse into your future.</p>
+
+<a class="btn btn-lg btn-primary" href="./sock-subscription.php">Get Started</a></div>
+
+<hr class="featurette-divider" />
+
+</div>
+<div class="row featurette">
+<div class="col-md-7">
+<h2 class="featurette-heading">The Best Socks. <span class="text-muted">Trust us.</span></h2>
+<p class="lead">With great power comes great responsibility, which is why we’ll never send you a pair of Aunt Sheryl’s DIY holiday socks. Every month our sock stylists select high quality socks from some of the most well known brands in the industry.</p>
+<p class="lead">While you may never see our stylists, appreciate that they share 117% of their DNA with both unicorns and musical, green-haired chocolate factory workers; they’re good at what they do.</p>
+
+<a class="btn btn-lg btn-primary" href="./sock-subscription.php">Get Started</a></div>
+<div class="col-md-5"><img class="featurette-image img-responsive" alt="Sock Brands - Happy Socks, Richer and Poorer, The Sock Guys and Sock it to Me" src="./img/socks-on-ropes.jpg" /></div>
+</div>
+<!-- /END THE FEATURETTES --></div>
+<!-- end container -->

@@ -1,0 +1,1045 @@
+/*
+Theme Name: Sockscrib Me WP
+Theme URI: http://sockscribe.me/
+Description: Our own WP theme
+Author: Daniel
+Author URI: http://sockscribe.me
+Version: 2.0
+Tags: responsive, bootstrap
+
+License: Attribution-ShareAlike 3.0 Unported (CC BY-SA 3.0)
+License URI: http://creativecommons.org/licenses/by-sa/3.0/
+
+This simple theme was built using the example Bootstrap theme "Basic marketing site" found on the Bootstrap web site http://twitter.github.com/bootstrap/examples/hero.html
+*/
+
+
+@import url('css/bootstrap.css'); 
+@import url('css/flexslider.css'); 
+@import url('css/flat-ui.css'); 
+@import url('css/social-likes.css'); 
+@import url('css/colorbox.css'); 
+@import url('css/carousel.css'); 
+
+/*------GENERAL----------
+*/
+body {
+	color: #2c3e50;
+}
+
+a {
+	color: #2c3e50;
+}
+
+a:hover {
+	color: #3498db;
+	text-decoration: none;
+}
+
+.left {
+	text-align: left;
+}
+
+.right {
+	text-align: right;
+}
+
+.fixed {
+	position: fixed;
+	top: 0;
+}
+
+hr {
+	margin-top: 60px;
+	margin-bottom: 60px;
+}
+
+.hide {
+	display: none;
+}
+
+.carousel-caption p{
+	font-size: 30.006px;
+}
+
+
+/*cell phone*/
+@media (max-width: 767px) {
+	h1 {	
+		font-size: 33px;
+	}
+
+	h2 {
+		font-size: 27px;
+	}
+
+	h3 {
+		font-size: 20px;
+	}
+
+	p {
+		font-size: 13px;
+	}
+
+	.price-block strong {
+	font-size: 16px;
+	}
+
+	.col-md-4 .shaded-form{
+	width: 85%;
+	margin: 0 auto;	
+	}
+
+	.navbar .nav {
+		float: none;
+	}
+	
+	.nav li,.navbar .nav {
+		width: 100%;
+		text-align: center;
+	}
+	
+	.navbar .navbar-brand {
+		width: 100%;
+		text-align: center;
+/*		margin-top: -45px;
+*/	}
+	
+	.navbar-brand img {
+		width: 40%;
+	}
+	
+	.footer-row .col-sm-12 {
+		clear: both;
+	}
+
+	.marketing .col-sm-4{
+		margin-top: 50px;
+	}
+
+	.play-button{
+		display: none;
+	}
+
+	#msform {
+/*	height: 1000px;
+*/	}
+}
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width:768px) { 
+
+	h1 {	
+		font-size: 40px;
+	}
+
+	h2 {
+		font-size: 35px;
+	}
+	
+	h3 {
+		font-size: 27px;
+	}
+
+	p {
+		font-size: 14px;
+	}
+
+	.price-block strong {
+	font-size: 18px;
+	}
+
+	.footer-row{
+		text-align: center;
+	}
+
+	#fc_shipping{
+		font-size: 14px;
+	}
+
+	.social-likes {
+	display: none;
+	}
+	
+	img {
+		margin: 0 auto;
+	}
+	
+	.featurette-image {
+		margin-top: 0;
+	}
+
+	.featurette-heading {
+	margin-top: 33px;
+	}
+	
+	.marketing .col-lg-4 {
+		margin-bottom: 75px;
+	}
+
+	.play-button{
+		margin-left: 25%;
+		margin-top: 25%;
+	}
+
+	#msform {
+/*	height: 1000px;
+*/	}
+
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width:1200px) {
+
+	h1 {
+		font-size: 61px;
+	}
+
+	h2 {
+		font-size: 53px;
+	}
+	
+	h3 {
+		font-size: 32px;
+	}
+
+	p {
+		font-size: 18px;
+	}
+
+	.price-block strong {
+	font-size: 20px;
+	}
+
+	.radios .col-md-4 {
+	width: 30%;
+	}
+
+	.radios .col-md-6 {
+		width: 46.5%;
+	}
+
+}
+
+
+
+/*----NAVIGATION--------
+*/
+.header a {
+	color: #d35400;
+}
+
+.header a:hover {
+	color: #e67e22;
+}
+
+.flexslider {
+	color: #FFF;
+}
+
+.navbar-wrapper {
+	margin-top: 0;
+}
+
+.flexslider {
+	border: none;
+}
+
+.flex-control-nav {
+	bottom: 5px;
+}
+
+.caption{
+	position: absolute;
+}
+
+/*.live-life-caption{
+	margin-top: -346px;
+}
+
+.awesome-sock-subscription-caption{
+	margin-top: -278px;
+	text-align: center;
+}
+
+.great-gift-caption{
+	margin-top: -295px;
+}
+
+.sock-brands-caption{
+	margin-top: -314px;
+}
+*/
+
+.navbar {
+	width: 100%;
+	-moz-transition: opacity .25s ease-in-out;
+	-webkit-transition: opacity .25s ease-in-out;
+}
+
+@media (max-width: 990px) {
+	h1 {
+		font-size: 1.8em;
+	}
+	
+	h2 {
+		font-size: 1.2em;
+	}
+	
+	p,.lead {
+		font-size: 1.2em;
+	}
+	
+	.caption {
+		margin-top: 0;
+	}
+	
+	.flex-control-nav {
+		display: none;
+	}
+	
+	.flex-direction-nav {
+		display: none;
+	}
+	
+	.pull-right {
+		float: none;
+	}
+	
+	.header {
+		text-align: center;
+	}
+	
+	.flexslider {
+		color: #000;
+	}
+
+}
+
+.navbar-brand img {
+	width: 200px;
+}
+
+.bold-pill {
+	font-weight: bolder;
+}
+
+/*-------BODY--------
+*/
+
+
+.center {
+	text-align: center;
+}
+
+.navbar {
+	margin-bottom: 0;
+	border-radius: 0;
+}
+
+.nav-pills {
+	clear: both;
+	margin-top: 10px;
+}
+
+.nav-pills a:hover {
+	background-color: #83CB2D;
+}
+
+.navbar-brand h1 {
+	text-indent: -999999px;
+	position: absolute;
+}
+
+.navbar-nav {
+	margin-top: 15px;
+}
+
+.navbar-condensed {
+	position: fixed !important;
+	padding-bottom: 5px !important;
+}
+
+.navbar-brand-condensed {
+	padding: 0 !important;
+	padding-top: 5px !important;
+}
+
+.navbar-nav-condensed {
+	margin-top: 0 !important;
+}
+
+.signup-nav{
+	color: #1abc9c !important;
+	font-weight: bold;
+}
+
+.marketing{
+	margin-top: 50px;
+}
+.social-likes {
+	margin-top: 15px;
+}
+
+#testimonials .a-testimonial {
+	display: none;
+}
+
+blockquote {
+	border-left: none;
+	padding: 0;
+	margin: 0;
+}
+
+blockquote small {
+	float: right;
+}
+
+.a-testimonial img {
+	margin: 0 auto;
+}
+
+.a-testimonial .col-md-8 {
+	margin-top: 30px;
+}
+
+.btn-lg {
+	padding-left: 50px;
+	padding-right: 50px;
+}
+
+.featurette-image {
+	margin-top: 40px;
+}
+
+.featurette-heading{
+	font-weight: 700;
+	line-height: 1.1;
+}
+
+
+
+
+
+.flex-direction-nav a {
+	overflow: visible;
+}
+
+.about-us-progress .progress {
+	height: 40px;
+}
+
+.about-us-progress h5 {
+	margin-top: 5px;
+}
+
+/*.carousel-inner > .item > img{
+	max-width: 100%; 
+	height: auto;
+}*/
+.carousel .item{
+	background: url(img/photos/socks-sitting-on-a-wall.png);
+	background-repeat: no-repeat;
+	background-position: center;
+}
+/*----------Sock subscription options-------------*/
+.form-container {
+	padding-left: 60px;
+	padding-right: 25px;
+	border-radius: 6px;
+}
+
+.check-duration,.check-gender,.check-style {
+	display: none;
+	-moz-transition: all 50ms linear;
+	-o-transition: all 50ms linear;
+}
+
+
+label h6 {
+	margin-top: 40px;
+}
+
+.radios .radio {
+	margin: 10px;
+	border: 2px solid #f4f6f6;
+	transition: all .5s;
+	-webkit-transition: all .5s;
+	-moz-transition: all 50ms linear;
+	-o-transition: all 50ms linear;
+	text-align: center;
+	cursor: pointer;
+	display: inline-block;
+	font-size: 16px;
+	line-height: 25.6px;
+	vertical-align: middle;
+	-webkit-font-smoothing: antialiased;
+	font-weight: 700;
+	-webkit-border-radius: 6px;
+	-moz-border-radius: 6px;
+	border-radius: 6px;
+	padding: 15px;
+	overflow: hidden;
+}
+
+#msform .tile{
+	cursor: pointer;
+	transition: all .5s;
+	-webkit-transition: all .5s;
+	-moz-transition: all 50ms linear;
+	-o-transition: all 50ms linear;
+	width: 100%;
+}
+
+.tile h3 {
+	margin-top:0px;
+}
+
+.fs-title h3{
+	margin-top: 20px;
+}
+
+.tile p{
+	margin-bottom:0px;
+}
+
+.price-block {
+	display: block;
+	background-color: #3498DB;
+	color: #FFF;
+	border-radius: 4px;
+	margin: 10px;
+}
+
+.radios .radio:hover {
+	border-color: #bdc3c7;
+}
+
+.btn-spacing {
+	margin: 50px;
+}
+
+.radio h3{
+	margin-top: 10px;
+}
+
+/*.radios .radio:hover{
+	border-color: #48C9B0;
+}*/
+#msform input[type=radio]:checked + .radio {
+	background-color: #f4f6f6;
+	border-color: #2ecc71;
+}
+
+#msform input[type=radio] {
+	display: none;
+}
+
+#msform input[type=radio]:checked + .radio {
+	opacity: 1;
+	filter: alpha(opacity=40);
+/* For IE8 and earlier */
+}
+
+.radios p {
+	margin: 0 0 -2px;
+}
+
+
+
+.fadein img {
+	position: absolute;
+	left: -65px;
+	top: 0;
+	margin-top: 10px;
+	width: 75px;
+	-webkit-animation-name: fade;
+	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-duration: 6s;
+	animation-name: fade;
+	animation-iteration-count: infinite;
+	animation-duration: 6s;
+}
+
+@-webkit-keyframes fade {
+	0opacity: 0;
+}
+
+20% {
+	opacity: 1;
+}
+
+33% {
+	opacity: 1;
+}
+
+53% {
+	opacity: 0;
+}
+
+100% {
+	opacity: 0;
+}	
+
+}
+
+@keyframes fade {
+	0opacity: 0;
+}
+
+20% {
+	opacity: 1;
+}
+
+33% {
+	opacity: 1;
+}
+
+53% {
+	opacity: 0;
+}
+
+100% {
+	opacity: 0;
+}	
+
+}
+
+.shapes img {
+	left: 100px;
+}
+
+.crazy img {
+	left: 70px;
+}
+
+.fading-images {
+	height: 75px;
+}
+
+#s2,#c2 {
+	-webkit-animation-delay: -4s;
+}
+
+#s3,#c3 {
+	-webkit-animation-delay: -2s;
+}
+
+.customize-images {
+	margin: 0 auto 18px;
+}
+
+.month-to-month-sprite {
+	width: 37px;
+	height: 35px;
+	background: url(img/durations-sprite.png) 0 0;
+	transition: all .3s;
+	-webkit-transition: all .3s;
+}
+
+.six-month-sprite {
+	width: 35px;
+	height: 34px;
+	background: url(img/durations-sprite.png) -38px 0;
+	transition: all .3s;
+	-webkit-transition: all .3s;
+}
+
+.twelve-month-sprite {
+	width: 37px;
+	height: 35px;
+	background: url(img/durations-sprite.png) -74px 0;
+	transition: all .3s;
+	-webkit-transition: all .3s;
+}
+
+.shapes-sprite {
+	width: 76px;
+	height: 71px;
+	background: url(img/types-of-socks/stylish-yellow-stripes.png);
+	transition: all .3s;
+	-webkit-transition: all .3s;
+}
+
+.pictures-sprite {
+	width: 76px;
+	height: 71px;
+	background: url(img/types-of-socks/crazy-sushi.png);
+	transition: all .3s;
+	-webkit-transition: all .3s;
+}
+
+.tile .btn{
+	margin-top: 15px;
+}
+
+.tile{
+	margin-bottom: 30px;
+}
+.radio .btn {
+	margin-top: 20px;
+}
+
+.fui-check-inverted {
+	float: left;
+	margin-top: -40px;
+	margin-left: 20px;
+}
+
+
+#msform .shaded-form{
+	padding: 0px;
+}
+
+/*form styles*/
+#msform {
+	text-align: center;
+/*	height: 500px;
+*/}
+#msform fieldset {
+	box-sizing: border-box;
+	
+	/*stacking fieldsets above each other*/
+/*	position: absolute;
+*/}
+/*Hide all except first fieldset*/
+#msform fieldset:not(:first-of-type) {
+	display: none;
+}
+
+
+.gift-toggle input{
+	display: inline-block  !important;
+}
+/*headings*/
+
+/*progressbar*/
+#progressbar {
+	/*CSS counters to number the steps*/
+	counter-reset: step;
+	height: 41px;
+	margin-top: 17px;
+}
+#progressbar li {
+	list-style-type: none;
+	color: white;
+	text-transform: uppercase;
+	font-size: 9px;
+	width: 33.33%;
+	float: left;
+	position: relative;
+}
+#progressbar li:before {
+	content: counter(step);
+	counter-increment: step;
+	width: 20px;
+	line-height: 20px;
+	display: block;
+	font-size: 10px;
+	color: #333;
+	background: white;
+	border-radius: 3px;
+	margin: 0 auto 5px auto;
+}
+/*progressbar connectors*/
+#progressbar li:after {
+	content: '';
+	width: 100%;
+	height: 2px;
+	background: white;
+	position: absolute;
+	left: -50%;
+	top: 9px;
+	z-index: -1; /*put it behind the numbers*/
+}
+#progressbar li:first-child:after {
+	/*connector not needed before the first step*/
+	content: none; 
+}
+/*marking active/completed steps green*/
+/*The number of the step and the connector before it = green*/
+#progressbar li.active:before,  #progressbar li.active:after{
+	background: #3498db; 
+	color: white; 
+}
+
+
+.continue-checkout-btn{
+width:220px;
+padding-left: 50px;
+padding-right: 50px;
+padding: 10px 19px;
+font-size: 17px;
+line-height: 1.471;
+border-radius: 6px;
+color: #ffffff;
+background-color: #1abc9c;
+}
+
+
+
+.continue-button{
+	margin-top: 50px;
+}
+
+
+
+@media max-width: 750px) {
+
+
+
+
+	.form-container {
+		padding: 0;
+	}
+	
+	.radios .radio {
+		width: 90%;
+	}
+	
+	.customize-images {
+		float: left;
+		margin-top: 21px;
+		margin-left: 10%;
+	}
+	
+	.more-information {
+		position: relative;
+		bottom: inherit;
+		height: inherit;
+		background: none;
+	}
+	
+	.radio:hover .more-information {
+		position: relative;
+		bottom: inherit;
+		height: inherit;
+		background: none;
+	}
+	
+	.radio:hover .customize-images {
+		float: left;
+		margin-top: 21px;
+		margin-left: 10%;
+	}
+
+
+}
+
+.sale-container p{
+	margin:0px;
+}
+
+.sale-container a:hover{
+	color: black;
+}
+
+.play-video{
+	margin-top: 40px;
+	background: url(img/sock-video-preview-picture.png) no-repeat;
+	background-position:center; 
+	height: 500px;
+	width: 100%;
+	text-indent: -99999px;
+}
+.play-video:hover{
+	margin-top: 40px;
+	background: url(img/sock-video-preview-picture-hover.png) no-repeat;
+	background-position:center; 
+
+}
+/*--------FOXYCART---------*/
+.help-block {
+	font-size: .8em;
+}
+
+#add_coupon{
+	margin-top: 30px;
+}
+
+.recipt-social{
+	margin-bottom: 35px;
+	margin-top:35px;
+	text-align: center;
+}
+.recipt-social a{
+  text-decoration: none;
+  color: black;
+}
+
+
+.recipt-social-img{
+	border-radius: 50%;
+	margin-top: px;
+	width: 225px;
+	height: 225px;
+	margin: 0 auto;
+	background-color: #FEF252;
+}
+
+.fc_col1{
+	width: 75%;
+}
+.fc_col2{
+	width: 25%;
+}
+
+table{
+	width: 100%;
+}
+
+/*----COLORS http://flatuicolors.com/ -------
+*/
+.sign-up-divider {
+	padding: 20px;
+	margin: 80px 0;
+	text-align: center;
+}
+
+.green-background {
+	background-color: #83CB2D;
+}
+
+.purple-background {
+	background-color: #DDFE92;
+}
+
+.blue-background {
+	background-color: #2D52CB;
+}
+
+.sun-flower-background {
+	background-color: #FEF252;
+}
+
+.emerald-background {
+	background-color: #2ecc71;
+}
+
+.carrot-background {
+	background-color: #e67e22;
+}
+
+.pomegranate-background{
+	background-color: #c0392b;
+}
+
+.white-text{
+	color: white;
+}
+.active {
+	color: #16a085 !important;
+}
+
+
+.red{
+	color: #c0392b;
+}
+
+/*----------CHECKOUT PAGE---------*/
+.shaded-form {
+	background-color: #edeff1;
+	padding: 24px 23px 20px;
+	position: relative;
+	border-radius: 6px;
+}
+
+.checkbox input {
+	display: inline-block !important;
+	margin-right: 12px;
+}
+
+.checkbox-container{
+	position: inherit;
+	clear: both;
+}
+
+/*-------FOOTER----------*/
+.footer {
+	padding: 40px;
+	margin-top: 50px;
+}
+
+.footer-row {
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+
+.social {
+	margin-bottom: 20px;
+	height: 45px;
+}
+
+.newsletter-footer{
+	margin-top: -25px;
+}
+footer .social_button {
+	border-radius: 50%;
+	width: 40px;
+	height: 40px;
+	margin: 0 auto;
+	background-repeat: no-repeat;
+	float: left;
+	margin-right: 10px;
+	cursor: pointer;
+}
+
+.social_button {
+	text-indent: -3333px;
+}
+
+.social_button img {
+	width: 32px;
+	height: 30px;
+}
+
+a.fill-div {
+	display: block;
+	height: 100%;
+	width: 100%;
+	text-decoration: none;
+}
+
+.social_button:hover {
+	opacity: .7;
+}
+
+.facebook {
+	background: url(img/social-buttons.png) 3px 5px;
+	background-color: #2980b9;
+}
+
+.google_plus {
+	background: url(img/social-buttons.png) -31px 4px;
+	background-color: #DE3D33;
+}
+
+.instagram {
+	background: url(img/social-buttons.png) -65px 5px;
+	background-color: #CEBAA9;
+}
+
+.twitter {
+	background: url(img/social-buttons.png) -98px 5px;
+	background-color: #00A0D1;
+}
+
+.facebook_recipt{
+  background-color: #32528E;
+  background-image: url(img/facebook-large.png);
+
+}
+.twitter_recipt{
+  background-color: #00A0D1;
+  background-image: url(img/twitter-lager.png);
+
+}
+.google_plus_recipt{
+  background-color: #DE3D33;
+  background-image: url(img/google-plus-large.png);
+
+}
+
+.facebook_recipt:hover, .twitter_recipt:hover, .google_plus_recipt:hover{
+    opacity: .7;
+}
