@@ -7,7 +7,11 @@
   <?php the_content(); ?>
 
 <?php endwhile; else: ?>
-  <p><?php _e('Sorry, no posts matched your criteria.'); ?></p>
+	<div class="row">
+	  <div class="col-md-8 col-md-offset-2">
+		  <p><?php _e('Woops, there seems to be an error with the site. No posts matched your criteria.'); ?></p>
+	 </div>
+	</div>	 
 <?php endif; ?>
 
 

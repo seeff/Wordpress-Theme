@@ -31,15 +31,19 @@
 <!-- NAVBAR
 ================================================== -->
   <body>
+    <!-- Facebook Like Button -->
+<div id="fb-root"></div>
+
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=755261777834581";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
 
         <div class="navbar navbar-default navbar-static-top sun-flower-background">
-<!--         <div class="row pomegranate-background text-center white-text sale-container">
-          <div class="container">
-              <a href="./sock-subscription.php" class="white-text">
-                <p>Thanksgiving Sale, limited offer! Get <strong>15% off</strong> all 6 and 12 month sock subscriptions. Use code <em>THANKSGIVING</em></p>
-              </a>
-          </div>
-        </div> -->
       <div class="container">
 
 
@@ -51,28 +55,13 @@
           </button>
           <a class="navbar-brand" href="<?php echo site_url(); ?>"><h1><?php bloginfo('name'); ?></h1><img src="<?php bloginfo('stylesheet_directory'); ?>/img/logo.png"></img></a>
         </div>
-         <!--  <ul class="social-likes navbar-right"  data-url="http://sockscribe.me/" data-title="Sockscribe Me - Awesome Sock Subscription Service">
-            <li class="facebook" title="Share link on Facebook">Facebook</li>
-            <li class="twitter" data-via="sockscribeme" data-related="Awesome Sock Subscription Service" title="Share link on Twitter">Twitter</li>
-            <li class="plusone" title="Share link on Google+">Google+</li>
-            <li class="pinterest" title="Share image on Pinterest" data-media="http://sockscribe.me/images/logo.png">Pinterest</li>
-          </ul> -->
-
-
         <div class="navbar-collapse collapse">
-          <ul class="nav navbar-nav navbar-right">
-
-            <?php wp_list_pages(array('title_li' => '', 'exclude' => 178)) ?>
-          </ul>
-        </div><!--/.nav-collapse -->
+                      <?php wp_nav_menu( array( 'menu' => 'Header', 'theme_location' => 'Header', 'container_class' => 'class', 'menu_class' => 'nav navbar-nav navbar-right' ) ); ?>
+          <div class="nav navbar-nav navbar-right">
+          </div>
+        </div>
       </div>
     </div>
-
-
-  
-
-
-              <!-- Static navbar -->
 
       </div>
     </div>

@@ -52,18 +52,14 @@
             </div>
 
             <div class="col-sm-12 col-md-5 text-right">
-              <div class="row"
-                <p class="pull-right"><a href="#">Back to top</a></p>
-              </div>
               <div class="row">
-                <p>&copy; 2013 Sockscribe Me LLC. &middot; <a href="./privacy.php">Privacy</a> &middot; <a href="./terms.php">Terms</a></p>
+                <?php wp_nav_menu( array('menu' => 'Footer' )); ?>
               </div>
             </div>
         </div>
       </footer>
 
 
-    
      <?php wp_footer(); ?>
    
   </body>

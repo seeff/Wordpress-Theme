@@ -809,6 +809,32 @@ a.fill-div {
     opacity: .7;
 }
 
+.btn-to-options{
+	font-family: "Lato", Helvetica, Arial, sans-serif;
+	margin-bottom: 30px;
+	font-size: 28px;
+	line-height: 1.46428571;
+	font-weight: 500;
+}
+.btn-primary{
+	background-color: #0591FF;
+}
+.btn-primary:hover{
+	background-color: #51B3FF;
+}
+.btn-primary:active{
+	background-color: #0591FF;
+}
+
+.current_page_item a{
+	color: #1abc9c;
+}
+
+#menu-footer ul{
+	list-style: none;
+	text-align: center;
+}
+
 @media (max-width: 990px) {
 	h1 {
 		font-size: 1.8em;
