@@ -6,20 +6,6 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta content=
-    "White socks are for wussies. Sockscribe Me will deliver awesome socks to your door monthly. Sign up for our monthly sock subscription service now!"
-    name="description">
-    <meta content=
-    "Sockscribe Me - Awesome Socks Delivered to Your Door Monthly">
-    <meta content="http://sockscribe.me/">
-    <meta content="http://sockscribe.me/images/photos/two-feet-linked.png">
-    <meta property="og:title" content="Sockscribe Me - Awesome Sock Subscription Service">
-    <meta property="og:type" content="product">
-    <meta property="og:url" content="http://sockscribe.me/">
-    <meta property="og:image" content="http://sockscribe.me/images/logo.png">
-    <meta property="og:site_name" content="Sockscribe Me">
-    <meta property="og:fb:app_id" content="1425336154346255">
-    <meta property="og:description" content="White socks are for wussies. Sockscribe Me will deliver awesome socks to your door monthly. Sign up for our monthly sock subscription service now!">
     <link href="images/ss_48x48.png" rel="icon" type="image/png">
 
     <title><?php wp_title('|',1,'right'); ?> <?php bloginfo('name'); ?></title>
@@ -77,7 +63,6 @@
           <ul class="nav navbar-nav navbar-right">
 
             <?php wp_list_pages(array('title_li' => '', 'exclude' => 178)) ?>
-
           </ul>
         </div><!--/.nav-collapse -->
       </div>

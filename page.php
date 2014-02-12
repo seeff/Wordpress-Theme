@@ -18,5 +18,15 @@
 	  </div>
 	 
 	</div>
+
+	<div class="dates hidden">
+		<input type="hidden" name="twelveMonthsDate" id="twelveMonthsDate" value="<?php
+			echo date('Ymd', strtotime("+12 month +1 day"));
+			?>" />		
+		<input type="hidden" name="sixMonthsDate" id="sixMonthsDate"value="<?php
+			echo date('Ymd', strtotime("+6 month +1 day"));
+			?>" />		
+	</div>
+
 </div>
 <?php get_footer(); ?>
