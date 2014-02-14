@@ -42,22 +42,34 @@
   fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk'));</script>
 
+<div class="row center sales-banner">
+  <p>VALENTINES DAY SPECIAL - 10% OFF WITH COUPON CODE:   <strong>LOVE</strong></p>
+</div>
+
+
+
 
         <div class="navbar navbar-default navbar-static-top sun-flower-background">
       <div class="container">
 
 
         <div class="navbar-header">
+
           <button type="button" class="navbar-toggle pull-right <?php echo ($page == "Checkout" ? "hide" : "")?>" data-toggle="collapse" data-target=".navbar-collapse">
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
           <a class="navbar-brand" href="<?php echo site_url(); ?>"><h1><?php bloginfo('name'); ?></h1><img src="<?php bloginfo('stylesheet_directory'); ?>/img/logo.png"></img></a>
+       
         </div>
+
         <div class="navbar-collapse collapse">
+
                       <?php wp_nav_menu( array( 'menu' => 'Header', 'theme_location' => 'Header', 'container_class' => 'class', 'menu_class' => 'nav navbar-nav navbar-right' ) ); ?>
+                      
           <div class="nav navbar-nav navbar-right">
+
           </div>
         </div>
       </div>

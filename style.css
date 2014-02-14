@@ -835,6 +835,12 @@ a.fill-div {
 	text-align: center;
 }
 
+.sales-banner{
+	background-color: #ff0000;
+	color: black;
+}
+
+
 @media (max-width: 990px) {
 	h1 {
 		font-size: 1.8em;

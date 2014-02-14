@@ -34,7 +34,19 @@
         if ($(this).val() == 'Twelve Months Subscription'){
           $productHolder.html("<input type=\"hidden\" name=\"sub_enddate\" value=\""+twelveMonthsDate+"\"><\/input>\r\n"+"<input type=\"hidden\" name=\"price\" value=\"0.00\"><\/input>\r\n<input type=\"hidden\" name=\"sub_frequency\" value=\"1m\"><\/input>\r\n<input type=\"hidden\" name=\"code\" value=\"free\"><\/input>\r\n<input type=\"hidden\" name=\"2:name\" value=\"Twelve Months Subscription Paid\"><\/input>\r\n<input type=\"hidden\" name=\"2:price\" value=\"144.00\"><\/input>\r\n<input type=\"hidden\" name=\"2:code\" value=\"12m\"><\/input>\r\n<input type=\"hidden\" name=\"2:category\" value=\"TwelveMonths\"><\/input>");
         }
-    });
+        // Delete these once tests are done
+        if($(this).val() == 'Month to Month testing'){
+           $productHolder.html("<input type=\"text\" name=\"price\" value=\"12.00\"<\/input>\r\n<input type=\"text\" name=\"sub_frequency\" value=\"1m\"><\/input>\r\n<input type=\"text\" name=\"category\" value=\"MonthToMonth\">\r\n<input type=\"text\" name=\"code\" value=\"month_to_month\"><\/input>\r\n<input type=\"text\" name=\"2:code\" value=\"month_to_month\"><\/input>"); 
+        }
+
+        if ($(this).val() == 'Six Months Subscription testing'){
+          $productHolder.html( "<input type=\"text\" name=\"price\" value=\"0.00\"><\/input>\r\n<input type=\"text\" name=\"sub_frequency\" value=\"1m\"><\/input>\r\n<input type=\"text\" name=\"code\" value=\"free\"><\/input>");
+        } 
+
+        if ($(this).val() == 'Twelve Months Subscription testing'){
+          $productHolder.html("<input type=\"text\" name=\"price\" value=\"0.00\"><\/input>\r\n<input type=\"text\" name=\"sub_frequency\" value=\"1m\"><\/input>\r\n<input type=\"text\" name=\"code\" value=\"free\"><\/input>");
+        }    });
+
 
     
     $(".imgLiquidFill").imgLiquid({fill:true, horizontalAlign:'center', verticalAlign:'center'});
